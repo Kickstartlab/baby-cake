@@ -10,10 +10,10 @@ import twitter from '../assets/twitter.png';
 
 export default function Footer() {
   return (
-    <footer className='container font-montserat mx-auto lg:px-20 px-5 text-gray-100 bg-line'>
+    <footer className='container font-montserat mx-auto lg:px-20 px-5 text-gray-100 bg-footer'>
 
       <div className="text-center">
-        <img src={logo} alt="pug Inu" className='flex mx-auto'/>
+        <img data-aos="zoom-out" src={logo} alt="pug Inu" className='flex mx-auto'/>
 
         <div className="pb-8 pt-3">
           <div className="text-gray-100">

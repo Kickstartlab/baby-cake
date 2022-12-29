@@ -1,6 +1,6 @@
 import React from 'react'
 import Menu from './Menu'
-import dog_1 from '../assets/dog_1.png';
+import dog_2 from '../assets/dog_2.png';
 import video from '../assets/video.mp4';
 import dog from '../assets/dog.png';
 import token_1 from '../assets/token_1.png';
@@ -10,9 +10,20 @@ import team from '../assets/team.png';
 import nft from '../assets/nft.png';
 import roadmap from '../assets/roadmap.png';
 import Footer from './Footer';
+import { useEffect } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 
 export default function Home() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2500,
+            once: true
+        });
+        Aos.refresh();
+    }, [])
 
     return (
         <div className="">
@@ -22,16 +33,16 @@ export default function Home() {
             <div className="lg:px-20 px-5 container mx-auto relative z-20">
                 <Menu />
 
-                <video width="1297" height="654" controls className='rounded-4xl my-8'>
+                <video width="1297" height="654" controls className='rounded-4xl my-8' data-aos="zoom-out">
                     <source src={video} type="video/mp4" />
                     Error Message
                 </video>
 
-                <div className="lg:flex block justify-between py-12 my-12 bg-path bg-purple">
+                <div className="lg:flex block justify-between items-center py-12 my-12 bg-path">
 
-                    <div className="lg:w-1/3 w-full">
+                    <div data-aos="fade-right" className="lg:w-1/2 w-full">
                         <h1 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                        What's pug?
+                            What's pug?
                         </h1>
 
                         <p className='py-8 leading-loose font-montserat text-gray-100'>A Pug Inu is a hybrid breed of dog created by crossing a Pug and an Akita Inu. They are known for being small yet strong, loyal, and loving. They are often called "designer breeds" because they are a relatively new type of dog. The Pug Inu has a very unique look and personality, and is a great companion for anyone who is looking for a loyal and loving pet.</p>
@@ -45,10 +56,10 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="img md:mt-0 mt-12 font-montserat">
+                    <div data-aos="fade-left" className="img md:mt-0 mt-12 font-montserat">
 
                         <div className='flex gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold'>
-                            <img src={dog_1} alt="" />
+                            <img src={dog_2} alt="" />
                         </div>
                     </div>
                 </div>
@@ -61,7 +72,7 @@ export default function Home() {
                 <div className="bg-dog font-montserat bg-blue-100">
                     <div className=" py-20 lg:px-20 px-5 container mx-auto block lg:flex justify-between items-center">
 
-                        <div className='lg:w-1/2 w-full'>
+                        <div data-aos="fade-right" className='lg:w-1/2 w-full'>
 
                             <h2 className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
                                 We Welcome you
@@ -90,7 +101,7 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
                             <img src={dog} alt="" className='lg:w-10/12 w-full lg:float-right' />
                         </div>
                     </div>
@@ -104,7 +115,7 @@ export default function Home() {
 
                     <div>
 
-                        <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                        <h2 data-aos="fade-down" className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
                             Tokenomics
                         </h2>
 
@@ -124,7 +135,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-white-100 py-8 rounded-3xl">
+                        <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-white-100 py-8 rounded-3xl">
 
                             <div className='text-center'>
                                 <img src={token_1} alt="" className='w-10/12' />
@@ -159,7 +170,7 @@ export default function Home() {
                         <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
                             <div className="flex flex-col gap-16">
-                                <div className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
+                                <div data-aos="fade-down" className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -170,7 +181,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="rounded-3xl p-8 text-center bg-zinc-100 shadow-2xl">
+                                <div data-aos="fade-up" className="rounded-3xl p-8 text-center bg-zinc-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -182,7 +193,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col py-16 lg:py-0">
+                            <div data-aos="zoom-out" className="flex flex-col py-16 lg:py-0">
                                 <div className="rounded-3xl p-8 text-center bg-zinc-50 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
@@ -196,7 +207,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-16">
-                                <div className="rounded-3xl p-8 text-center bg-purple-20 shadow-2xl">
+                                <div data-aos="fade-down" className="rounded-3xl p-8 text-center bg-purple-20 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -207,7 +218,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="rounded-3xl p-8 text-center bg-zinc-200  shadow-2xl">
+                                <div data-aos="fade-up" className="rounded-3xl p-8 text-center bg-zinc-200  shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -228,11 +239,11 @@ export default function Home() {
 
                         <div className="lg:flex justify-between">
 
-                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                            <h2 data-aos="fade-down" className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
                                 How to get your own pug
                             </h2>
 
-                            <button className="bg-purple-100 hover:bg-white-50 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
+                            <button data-aos="zoom-out" className="bg-purple-100 hover:bg-white-50 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
                                 Buy Now
                             </button>
 
@@ -242,15 +253,15 @@ export default function Home() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         </p>
 
-                        <h2 className='md:text-4xl text-3xl font-montserat font-bold mt-5'>
+                        <h2 data-aos="fade-right" className='md:text-4xl text-3xl font-montserat font-bold mt-5'>
                             Getting your Pug is as easy as it gets
                         </h2>
 
-                        <p className='py-8 leading-loose font-montserat'>
+                        <p data-aos="fade-left" className='py-8 leading-loose font-montserat'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                         </p>
 
-                        <p className='leading-loose font-montserat'>
+                        <p data-aos="fade-right" className='leading-loose font-montserat'>
                             Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna
                         </p>
 
@@ -274,7 +285,7 @@ export default function Home() {
                         <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
                             <div className="flex flex-col gap-16 py-16 lg:py-0">
-                                <div className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -285,7 +296,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -298,7 +309,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-16 py-16 lg:py-0">
-                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -309,7 +320,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -322,7 +333,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-16">
-                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -333,7 +344,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="rounded-3xl p-8 text-center bg-yellow-100  shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100  shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -360,7 +371,7 @@ export default function Home() {
 
                         <div className='lg:w-1/2 w-full'>
 
-                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
+                            <h2 data-aos="fade-right" className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
                                 Pug Roadmap
                             </h2>
 
@@ -370,12 +381,12 @@ export default function Home() {
 
                         </div>
 
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
                             <img src={dog} alt="" className='lg:w-8/12 w-full lg:float-right' />
                         </div>
                     </div>
 
-                    <img src={roadmap} alt="" className='flex mx-auto' />
+                    <img data-aos="zoom-in" src={roadmap} alt="" className='flex mx-auto' />
                 </div>
             </div>
 
@@ -397,7 +408,7 @@ export default function Home() {
 
                     </div>
 
-                    <img src={nft} alt="" />
+                    <img src={nft} alt="" data-aos="zoom-out" />
 
                     <div className="lg:px-20 px-5">
 
@@ -410,15 +421,15 @@ export default function Home() {
 
                             <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-12 px-8 ">
 
-                                <div className='text-center'>
+                                <div data-aos="zoom-in" className='text-center'>
                                     <img src={team} alt="" className='' />
                                 </div>
 
-                                <div className='text-center'>
+                                <div data-aos="zoom-in" className='text-center'>
                                     <img src={team} alt="" className='' />
                                 </div>
 
-                                <div className='text-center'>
+                                <div data-aos="zoom-in" className='text-center'>
                                     <img src={team} alt="" className='' />
                                 </div>
 
