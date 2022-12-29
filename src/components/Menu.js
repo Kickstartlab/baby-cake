@@ -1,9 +1,4 @@
 import React, { useState } from 'react'
-import logo from '../assets/logo.png';
-// import {
-//   BrowserRouter as Router,
-//   Link
-// } from "react-router-dom";
 
 
 export default function Menu() {
@@ -13,33 +8,36 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins text-black-100 h-20">
+      <div className="lg:flex hidden items-center justify-between font-montserat h-28">
         <a href="/" className="logo">
-          <img src={logo} alt="Logo" />
+          <h2 className='md:text-4xl text-3xl font-montserat font-bold'>
+            PUG INU
+          </h2>
         </a>
 
         <nav>
-          <ul className="text-md flex justify-center gap-8 items-center">
-            <li><a href="/" className="text-zinc-100">Home</a></li>
-            <li><a href="#about" className="hover:text-seagreen-100">About</a></li>
-            <li><a href="/" className="hover:text-seagreen-100">Destination</a></li>
-            <li><a href="/contact" className="hover:text-seagreen-100">Services</a></li>
-            <li><a href="/" className="hover:text-seagreen-100">Blog</a></li>
+          <ul className="text-md flex justify-center gap-12 items-center">
+            <li><a href="/" className="hover:text-seagreen-100 cursor-pointer">About</a></li>
+            <li><a href="/" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
+            <li><a href="/" className="hover:text-seagreen-100 cursor-pointer">Nft's</a></li>
+            <li><a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="hover:text-seagreen-100 cursor-pointer">Whitepaper</a></li>
           </ul>
         </nav>
 
         <div className="">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper">
-            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 hover:text-seagreen-100 text-black-100 py-2 px-8 rounded-sm font-semibold">
-              Whitepaper
+          <a href="/">
+            <button className="bg-blue-100 hover:bg-white-100 border-2 border-blue-100 hover:text-blue-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
+              Buy Now
             </button>
           </a>
         </div>
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
-        <a href="index.html" className="logo w-1/2">
-          <img src={logo} alt="Logo" />
+        <a href="/" className="logo w-1/2">
+          <h2 className='md:text-4xl text-3xl font-montserat font-bold'>
+            PUG INU
+          </h2>
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
@@ -49,31 +47,30 @@ export default function Menu() {
         </button>
       </div>
 
-      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-poppins font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
+      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-montserat font-semibold bg-blue-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
-            <a href="index.html" className="logo w-1/2">
-              <img src={logo} alt="Logo" />
+            <a href="/" className="logo">
+              <h2 className='md:text-4xl text-3xl text-white-100 font-montserat font-bold'>
+                PUG INU
+              </h2>
             </a>
           </div>
         </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="#about" className="text-lg ml-4 text-gray-200 font-semibold">About</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Destination</a>
-        </div>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Home</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">About</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Tokenomics</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">NFT's</a>
+        </button>
         <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Service</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Blog</a>
-        </div>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>
+          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-white-100 font-semibold">Whitepaper</a>
         </div>
       </div> : null
       }

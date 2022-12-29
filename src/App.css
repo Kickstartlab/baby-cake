@@ -1,14 +1,37 @@
-.bg-img{
-  background-image: url(../src/assets/box.png);
-  background-position: center;
-  background-size: cover;
+.bg-path {
+  background-image: url(../src/assets/Path.png);
+  background-position: bottom;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
+.bg-path_1 {
+  background-image: url(../src/assets/line.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bg-purple {
+  background-image: url(../src/assets/purple.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.bg-dog {
+  background-image: url(../src/assets/bg_dog.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.rounded-4xl {
+  border-radius: 4rem;
+}
 
 .slick-slide {
   padding: 20px;
 }
+
 .slick-list {
   padding: -20px;
 }

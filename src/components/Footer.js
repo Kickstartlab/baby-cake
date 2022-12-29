@@ -1,59 +1,49 @@
 import React from 'react'
-import logo_2 from '../assets/logo_2.png';
+import logo from '../assets/logo.png';
 import discord from '../assets/discord.png';
 import telegram from '../assets/telegram.png';
 import twitter from '../assets/twitter.png';
 
 
 
+
+
 export default function Footer() {
   return (
-    <footer className='container text-white-100 mx-auto lg:px-20 px-5'>
-      <div className="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 items-center gap-16 font-poppins py-8">
-        <div className="md:col-span-3 col-span-1">
-          <a href="/" className="logo">
-            <img src={logo_2} alt="Logo" />
-          </a>
-          <p className='py-5 leading-loose'>Book your services in minute using your own<br></br>
-            crypto wallet, get full Control for much longer.</p>
+    <footer className='container font-montserat mx-auto lg:px-20 px-5 text-gray-100 bg-line'>
 
-          <div className="flex gap-6 justify-start pt-3">
-            <span className="flex items-center justify-center hover:bg-white-100 bg-seagreen-100 rounded-full p-2">
-              <img src={discord} alt="discord" />
-            </span>
-            <span className="flex items-center justify-center hover:bg-white-100 bg-seagreen-100 rounded-full p-2">
-              <img src={telegram} alt="telegram" />
-            </span>
-            <span className="flex items-center justify-center hover:bg-white-100 bg-seagreen-100 rounded-full p-2">
-              <img src={twitter} alt="twitter" />
-            </span>
+      <div className="text-center">
+        <img src={logo} alt="pug Inu" className='flex mx-auto'/>
+
+        <div className="pb-8 pt-3">
+          <div className="text-gray-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunca <br></br> vulputate libero et velit interdum, ac aliquet odio mattis.
           </div>
         </div>
-        <div className="col-span-1">
-          <ul>
-            <li className='pb-3'>About</li>
-            <li>Privacy & Policy</li>
+
+        <nav>
+          <ul className="text-md lg:flex justify-center gap-12 items-center py-5">
+            <li><a href="/" className="italic">About</a></li>
+            <li><a href="/" className="italic">Tokenomics</a></li>
+            <li><a href="/" className="italic">Nft's</a></li>
+            <li><a href="/" className="italic">Rodmap</a></li>
+            <li><a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="cursor-pointer">Whitepaper</a></li>
           </ul>
-        </div>
-        <div className="col-span-1">
-          <ul>
-            <li className='pb-3'>Help/FAQ</li>
-            <li className='pb-3'>Affilates</li>
-          </ul>
-        </div>
-        <div className="col-span-1">
-          <ul>
-            <li className='pb-3'>Our Blog</li>
-            <li className='pb-3'>Low fare tips</li>
-          </ul>
-        </div>
+        </nav>
       </div>
 
-      <hr />
 
-      <div className="flex justify-between items-center py-5 px-2">
-        <p> Copyright, Crypto Living - {new Date().getFullYear()}. All rights reserved</p>
-        <a href="/">Terms & Conditions</a>
+      <hr className='text-gray-100'/>
+
+      <div className="lg:flex justify-between items-center py-5 px-2">
+        <p> Copyright, Pug Inu - {new Date().getFullYear()}. All rights reserved</p>
+
+        <div className='flex gap-6 items-center mt-5 lg:mt-0'>
+          <p>Follow Us</p>
+          <span><img src={discord} alt="" /></span>
+          <span><img src={telegram} alt="" /></span>
+          <span><img src={twitter} alt="" /></span>
+        </div>
       </div>
     </footer>
   )

@@ -1,323 +1,447 @@
 import React from 'react'
-import Footer from './Footer'
 import Menu from './Menu'
-import Slider from './Slider'
-import top from '../assets/top.png';
-import reason_1 from '../assets/reason_1.png';
-import reason_2 from '../assets/reason_2.png';
-import reason_3 from '../assets/reason_3.png';
-import bg_blue from '../assets/bg_blue.png';
-import mosq from '../assets/mosq.png';
-import Vector_2 from '../assets/Vector_2.png';
-import Vector from '../assets/Vector.png';
-import disco from '../assets/disco.png';
-import food from '../assets/food.png';
-import shop from '../assets/shop.png';
-import withdraw from '../assets/withdraw.png';
-import client from '../assets/client.png';
-import Plane from '../assets/Plane.png';
-import Hotel from '../assets/Hotel.png';
-import Cab from '../assets/Cab.png';
-import card from '../assets/card.png';
-import side from '../assets/side.png';
-import say from '../assets/say.png';
-import app_1 from '../assets/app_1.png';
-import app_2 from '../assets/app_2.png';
-import app_3 from '../assets/app_3.png';
-import app_4 from '../assets/app_4.png';
-import Ok from '../assets/Ok.png';
-import service from '../assets/service.png';
-import explore from '../assets/explore.png';
-import star_1 from '../assets/star_1.png';
-
-
+import dog_1 from '../assets/dog_1.png';
+import video from '../assets/video.mp4';
+import dog from '../assets/dog.png';
+import token_1 from '../assets/token_1.png';
+import token_2 from '../assets/token_2.png';
+import token_3 from '../assets/token_3.png';
+import team from '../assets/team.png';
+import nft from '../assets/nft.png';
+import Footer from './Footer';
 
 
 export default function Home() {
 
     return (
-        <div className="bg-seagreen-50">
+        <div className="">
 
             {/* top section */}
 
-            <div className="lg:px-20 px-5 container mx-auto">
+            <div className="lg:px-20 px-5 container mx-auto relative z-20">
                 <Menu />
 
-                <div className="lg:flex block justify-between items-center py-12">
-                    <div className="">
-                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                            No Credit Card?
-                        </h2>
-                        <h2 className='md:text-6xl text-3xl font-volkhov font-bold text-black-100'>
-                            No Problem!
-                        </h2>
+                <video width="1297" height="654" controls className='rounded-4xl my-8'>
+                    <source src={video} type="video/mp4" />
+                    Error Message
+                </video>
 
-                        <p className='pt-3 pb-4 leading-loose font-poppins'>Book your favorite services from us using your<br></br>
-                            very own crypto wallet. </p>
+                <div className="lg:flex block justify-between py-12 my-12 bg-path bg-purple">
 
-                        <div className="button font-poppins">
+                    <div className="lg:w-1/3 w-full">
+                        <h1 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                            Stand Out
+                            from The Crowd.
+                        </h1>
+
+                        <p className='py-8 leading-loose font-montserat text-gray-100'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+
+                        <div className="button font-montserat">
                             <a href="/">
-                                <button className="border-2 text-seagreen-200 font-poppins hover:text-white-100 border-seagreen-200 hover:bg-seagreen-200 py-2 px-8 rounded-sm font-semibold">
-                                    Discover Now
+                                <button className="bg-purple-100 hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
+                                    Get PUG
                                 </button>
                             </a>
                         </div>
                     </div>
 
-                    <div className="img md:mt-0 mt-12 font-poppins" style={{ backgroundImage: `url(${Vector} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
-                        <img src={top} alt="Logo" />
+                    <div className="img md:mt-0 mt-12 font-montserat">
 
-                        
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold absolute top-32'>
-                            <img src={service} alt="" />
-                            <div className="text-sm text-black-50">
-                                Best <br></br>Services
-                            </div>
-                        </div>
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute top-1/2 right-12'>
-                            <img src={explore} alt="" className='' />
-                            <div>
-                                <div className="text-md text-black-50 font-semibold">
-                                    Explore
-                                </div>
-
-                                <div className="text-sm text-black-50">
-                                    Every cornar of the<br></br> world with us
-                                </div>
-                            </div>
-                        </div>
-                        <div className='lg:flex hidden gap-3 p-5 bg-white-100 rounded-lg w-42 absolute bottom-32'>
-                            <img src={star_1} alt="" />
-                            <div>
-                                <div className="text-md text-black-50 font-semibold">
-                                    5 star
-                                </div>
-
-                                <div className="text-sm text-black-50">
-                                    Customer Reviewd
-                                </div>
-                            </div>
+                        <div className='flex gap-3 p-5 bg-white-100 rounded-lg w-42 font-semibold'>
+                            <img src={dog_1} alt="" />
                         </div>
                     </div>
                 </div>
 
+            </div>
 
-                <div className="bg-black-900 rounded-md p-3 my-5 mx-auto">
-                    <div className="md:flex block items-center justify-between">
-                        <div className="grid grid-cols-3 lg:grid-cols-7 items-center gap-12">
-                            <div className="">
-                                <img src={Plane} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Flights</p>
-                            </div>
+            {/* who we are */}
 
-                            <div className="">
-                                <img src={Hotel} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Hotel</p>
-                            </div>
+            <div className="">
+                <div className="bg-dog font-montserat bg-blue-100">
+                    <div className=" py-20 lg:px-20 px-5 container mx-auto block lg:flex justify-between items-center">
 
-                            <div className="">
-                                <img src={Cab} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Taxi</p>
-                            </div>
+                        <div className='lg:w-1/2 w-full'>
 
-                            <div className="">
-                                <img src={disco} alt="" />
-                                <p className="text-seagreen-200 font-poppins">CLubs</p>
-                            </div>
+                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
+                                We Welcome you
+                                on this adventure!
+                            </h2>
 
-                            <div className="">
-                                <img src={food} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Food</p>
-                            </div>
+                            <p className='py-8 leading-loose font-montserat text-white-100'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
+                            </p>
 
-                            <div className="">
-                                <img src={shop} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Shopping</p>
-                            </div>
+                            <p className='leading-loose font-montserat text-white-100'>
 
-                            <div className="">
-                                <img src={withdraw} alt="" />
-                                <p className="text-seagreen-200 font-poppins">Withdrawl</p>
-                            </div>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
+                            </p>
+
+                            <h2 className='pt-8 text-3xl font-montserat font-bold text-white-100'>
+                                Story time
+                            </h2>
+
+                            <p className='py-8 leading-loose font-montserat text-white-100'>
+                                Once upon a time, there lived a pug. He was a curious little pup who loved to explore the world around him. One day, pug was taking a stroll through the park when he spotted a tall man with a big smile. It was Elon Musk, the famous inventor and entrepreneur. Pug was so excited that he could hardly contain himself. Elon noticed Pug and his enthusiasm and immediately knelt down to pet him. The two shared an instant connection, and Elon asked Pug if he wanted to join him on his next adventure. Elon took Pug with him all over the world, from the heights of the Rocky Mountains to the Pug of the Amazon rainforest. Pug got to experience all kinds of exciting places and meet some incredible people. By the end of their trip, PUG and Elon had become great friends. Whenever Elon had a new invention or idea, he would always turn to PUG for advice.
+                            </p>
+
+                            <button className="bg-purple-100 hover:bg-blue-100 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
+                                Contact Us
+                            </button>
                         </div>
 
-                        <p className="text-seagreen-200 text-lg font-poppins md:mt-0 mt-4">& more...</p>
-
-                        <div className="button md:mt-0 mt-4">
-                            <a href="contact.html">
-                                <button className="bg-seagreen-200 hover:bg-black-900 hover:text-seagreen-200 hover:border-2 hover:border-seagreen-200 text-black-100 py-3 px-8 rounded-md font-poppins font-semibold">
-                                    Explore Now
-                                </button>
-                            </a>
+                        <div className="lg:w-1/2 w-full">
+                            <img src={dog} alt="" className='lg:w-10/12 w-full lg:float-right' />
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* section blue */}
-            <div className="bg-black-900">
+            {/* tokenomics*/}
 
-                <div className="">
+            <div className="bg-white-50 font-montserat">
+                <div className=" py-20 lg:px-20 px-5 container mx-auto">
 
-                    {/* why choose us */}
+                    <div>
 
-                    <div className="py-20 lg:px-20 px-5 container mx-auto">
-                        <div className="text-center" style={{ backgroundImage: `url(${side} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "right" }}>
-                            <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Why choose us? </h3>
-                            <p className="py-4 leading-loose font-poppins text-white-100">Our Platform  will connect your wallet with it our space. Now, you will be live in the space.<br></br> In this space, you have the ability to buy any sort of specialty. And our most prominent feature, flight booking and rental properties.</p>
+                        <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                            Tokenomics
+                        </h2>
+
+                        <div className='hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6 place-items-center pt-12 pb-3'>
+
+                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
+                                TAX: 50%
+                            </h2>
+
+                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
+                                TAX: 50%
+                            </h2>
+
+                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
+                                TAX: 50%
+                            </h2>
+
                         </div>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 text-poppins">
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_1} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Spend Crypto Online</h4>
-                                    <p className="text-black-50">You can easily pay for hotels and rentals through CryptoLiving platform. All you have to is swipe your Virtual visa card.
-                                    </p>
-                                </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-white-100 py-8 rounded-3xl">
+
+                            <div className='text-center'>
+                                <img src={token_1} alt="" className='w-10/12' />
+                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
+                                    Presale
+                                </h2>
+                            </div>
+                            <div className='text-center'>
+                                <img src={token_2} alt="" className='w-10/12' />
+                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
+                                    Presale
+                                </h2>
+                            </div>
+                            <div className='text-center'>
+                                <img src={token_3} alt="" className='w-10/12' />
+                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
+                                    Presale
+                                </h2>
                             </div>
 
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_2} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Secure payments</h4>
-                                    <p className="text-black-50 pb-5">Crypto Living brings you Secure and safe payment plan. </p>
-                                </div>
-                            </div>
-
-                            <div className="col-span-1">
-                                <div className="bg-white-100 p-8 rounded-md">
-                                    <img src={reason_3} alt="" />
-                                    <h4 className='text-lg font-bold pb-3 pt-6'>Globally available</h4>
-                                    <p className="text-black-50">Move around the world with Crypto Living. You can go anywhere in the world by paying crypto.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* we got your back */}
-
-                    <div className="py-16 bg-img">
-                        <div className="container mx-auto">
-
-                            <div className="text-center py-8">
-                                <h3 className="text-white-100 text-center text-3xl md:text-6xl font-bold font-poppins">Virtual Visa Card</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100 flex mx-auto lg:w-1/2 w-full">Crypto Living offers you virtual visa card. You don't have to keep cash or credit card anymore. CryptoLiving offering you world first  crypto visa card. Where you can buy anything without any worries.  Now crypto holders don't have to keep cash anymore.</p>
-                            </div>
-
-                            <div className="py-8">
-                                <img src={card} alt="" className='lg:w-1/2 w-full flex mx-auto' />
-                            </div>
                         </div>
 
                     </div>
 
-                    {/* deals and discounts */}
+                    {/* our values */}
 
-                    <div className="pb-12 pt-16" style={{ backgroundImage: `url(${Vector_2} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top", backgroundSize: 'contain' }}>
+                    <div className="py-16">
+                        <h2 className='text-3xl font-montserat font-bold'>
+                            Our Values
+                        </h2>
 
-                        <div className='pb-16' style={{ backgroundImage: `url(${mosq})`, backgroundPosition: "bottom", backgroundRepeat: 'no-repeat' }}>
+                        <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
-                            <div className="text-center py-8 container mx-auto">
-                                <h3 className="text-seagreen-200 text-center text-4xl font-bold font-volkhov">deals & discounts</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">Discover our fantastic early booking discounts<br></br> & start planning your journey.</p>
+                            <div className="flex flex-col gap-16">
+                                <div className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rounded-3xl p-8 text-center bg-zinc-100 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div className="container mx-auto">
-                                <Slider />
+                            <div className="flex flex-col py-16 lg:py-0">
+                                <div className="rounded-3xl p-8 text-center bg-zinc-50 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-16">
+                                <div className="rounded-3xl p-8 text-center bg-purple-20 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rounded-3xl p-8 text-center bg-zinc-200  shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
                     </div>
 
-                    {/* about us */}
+                    {/* how to buy */}
 
-                    <div id='about' className="pb-20 lg:px-20 px-5 container mx-auto" style={{ backgroundImage: `url(${say} )`, backgroundRepeat: 'no-repeat', backgroundPosition: "top right" }}>
+                    <div className="lg:py-20 py-5">
 
-                        <div className="lg:flex block justify-between items-center gap-8 pb-8">
+                        <div className="lg:flex justify-between">
 
-                            <div className="lg:w-1/2 w-full">
+                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                                How to get your own pug
+                            </h2>
 
-                                <h3 className="text-seagreen-100 md:text-4xl text-2xl font-bold font-volkhov pt-1 ">About us</h3>
-                                <p className="py-4 leading-loose font-poppins text-white-100">
-                                    In crypto living, we want you to move forward with a new concept. As you might be aware with non-fungible token (NFT) and metaverse, we would like to introduce some aspects for you.  We believe in that universe, you need to have some luxuries with you and then you can progress authentically. For instance, in crypto living, we are introducing visa card that can help you buy boarding tickets and rental properties. You see it is new. If you have a wallet on any exchange, you just have to link it with the website, transfer your dues immediately and then can buy the property using our website server. The transaction will be smooth and steady, and in no time, you can have a property at your name.</p>
-                            </div>
+                            <button className="bg-purple-100 hover:bg-white-50 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
+                                Buy Now
+                            </button>
 
-                            <div className="lg:w-1/2 block mt-8 md:mt-0">
-                                <img src={client} alt="" />
-
-                                <div className="bg-white-100 p-8 rounded-md -mt-5 md:ml-5 ml-0">
-                                    <p className=' font-poppins text-black-100'>“As crypto person it's my responsibility to save other people from this cash hassle. World is advancing towards Metaverse and  other big things. So, I give my community cash freedom with this platform. Now they can use crypto in their life ”</p>
-
-                                    <h4 className='font-bold text-lg text-black-100 pt-5'>Marco Shelby</h4>
-                                    <p className=' font-poppins text-black-100'>Dubai, UAE</p>
-                                </div>
-                            </div>
                         </div>
 
-                        {/* get app section */}
+                        <p className="leading-loose py-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
 
-                        <div className="pt-12 md:pb-20 pb-0">
-                            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center gap-6">
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Worldwide Available
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Instant Transaction
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Mobile application
-                                    </p>
-                                </div>
-                                <div className="border-4 border-seagreen-200 rounded-xl p-5 flex flex-col items-center">
-                                    <img src={Ok} alt="" className='w-16' />
-                                    <p className="py-4 leading-loose font-poppins text-white-100">
-                                        Pay  Crypto
-                                    </p>
-                                </div>
-                            </div>
+                        <h2 className='md:text-4xl text-3xl font-montserat font-bold mt-5'>
+                            Getting your Pug is as easy as it gets
+                        </h2>
+
+                        <p className='py-8 leading-loose font-montserat'>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        </p>
+
+                        <p className='leading-loose font-montserat'>
+                            Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna
+                        </p>
+
+                    </div>
+
+                    {/* pug ecosystem */}
+
+                    <div className="lg:py-20 py-5">
+
+                        <div className="">
+
+                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                                How to get your own pug
+                            </h2>
+
+                            <p className="leading-loose py-8">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
                         </div>
 
-                        <div>
+                        <div className="lg:grid grid-col-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
-                            <h3 className="text-white-100 text-center text-4xl font-bold font-volkhov">Get the App Today! </h3>
+                            <div className="flex flex-col gap-16">
+                                <div className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <p className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <div className="flex gap-6 items-center justify-center pt-8 pb-6">
-                                <img src={app_1} alt="" className='w-16' />
-                                <img src={app_2} alt="" className='w-16' />
-                                <img src={app_3} alt="" className='w-16' />
-                                <img src={app_4} alt="" className='w-16' />
-
-                            </div>
-                        </div>
-
-                        {/* get in touch */}
-
-                        <div className="mt-12 p-8 md:p-16 bg-seagreen-200 rounded-md" style={{ backgroundImage: `url(${bg_blue})`, backgroundSize: 'cover' }}>
-                            <div className="">
-                                <h3 className="text-white-100 md:text-4xl text-2xl font-bold font-volkhov text-center">Get in touch to learn<br></br> more and find insiders<br></br> discounts!</h3>
-                            </div>
-                            <div className="lg:flex hidden justify-center items-center mt-8">
-                                <div className="relative text-poppins">
-                                    <input type="email" className="lg:h-16 h-12 lg:w-96 w-full pl-5 pr-20 rounded-lg z-0 focus:shadow focus:outline-none" placeholder="Enter Your Email" />
-                                    <div className="absolute top-2 right-2"> <button className="p-3 text-white-100 rounded-lg bg-seagreen-200">Connect!</button> </div>
+                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className="flex flex-col gap-16">
+                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-16">
+                                <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="rounded-3xl p-8 text-center bg-yellow-100  shadow-2xl">
+                                    <div className="p-5">
+                                        <h4 className="text-2xl font-bold">
+                                            ABCD
+                                        </h4>
+                                        <div className="leading-loose py-8">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
 
                 </div>
-
-                <Footer />
             </div>
+
+            {/* roadmap */}
+
+            <div className=" bg-blue-100">
+                <div className="font-montserat bg-dog">
+                    <div className=" py-20 lg:px-20 px-5 container mx-auto block lg:flex justify-between items-center">
+
+                        <div className='lg:w-1/2 w-full'>
+
+                            <h2 className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
+                                Pug Roadmap
+                            </h2>
+
+                            <p className='py-8 leading-loose font-montserat text-white-100'>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+
+                        </div>
+
+                        <div className="lg:w-1/2 w-full">
+                            <img src={dog} alt="" className='lg:w-8/12 w-full lg:float-right' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* pug nft */}
+
+            <div className="bg-white-100 font-montserat">
+                <div className=" py-20 container mx-auto">
+
+                    <div className='lg:px-20 px-5 '>
+
+                        <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                            Pug NFT’s
+                        </h2>
+
+                        <p className="text-gray-100 leding-loose py-8">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, <br></br>dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, <br></br>risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+                        </p>
+
+
+                    </div>
+
+                    <img src={nft} alt="" />
+
+                    <div className="lg:px-20 px-5">
+
+                        <div className="py-12 rounded-2xl bg-path_1 bg-purple-100">
+
+                            <h4 className="text-3xl py-8 font-bold text-center text-white-100 p-3">
+                                A dream team building a curated<br></br> marketplace for you.
+                            </h4>
+
+
+                            <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-12 px-8 ">
+
+                                <div className='text-center'>
+                                    <img src={team} alt="" className='' />
+                                </div>
+
+                                <div className='text-center'>
+                                    <img src={team} alt="" className='' />
+                                </div>
+
+                                <div className='text-center'>
+                                    <img src={team} alt="" className='' />
+                                </div>
+
+                            </div>
+
+                            <div className="mt-8 px-8 text-white-100 border-t border-white-50">
+
+                                <div className="pt-6 px-5 lg:flex justify-between items-center">
+                                    <h3 className="text-white font-bold md:text-5xl text-2xl">
+                                        Get your<br></br>
+                                        pub today!
+                                    </h3>
+
+                                    <h3 className="text-white font-bold md:text-3xl text-2xl">
+                                        Get the whitepaper
+                                    </h3>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
 
         </div >
     )

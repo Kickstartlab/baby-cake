@@ -4,10 +4,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      seagreen: {
-        "50": "#F5F9FF",
-        "100": "#03E6B6",
-        "200": "#00CEEA",
+      blue: {
+        "100": "#232340",
       },
       black: {
         "50": "#666",
@@ -18,14 +16,25 @@ module.exports = {
         "100": "#fff",
         "50": "#f5f5f5"
       },
-      pink: {
-        "100": "#FFE7DB",
-        "200": "#FA7436"
+      purple: {
+        "20": "#E8BEFF",
+        "50": "#C897E4;",
+        "100": "#5468E7"
       },
+      gray: {
+        "100": "#606060"
+      },
+      yellow: {
+        "100": "#FFCE79"
+      },
+      zinc: {
+        "50": "#D1ECFD",
+        "100": "#CDD3FF",
+        "200": "#B6B6FF"
+      }
     },
     fontFamily: {
-      'volkhov': ["'Volkhov', serif;"],
-      'poppins': ["'Poppins', sans-serif;"],
+      'montserat': ["'Montserrat', sans-serif;"],
     }
   },
   plugins: [],
