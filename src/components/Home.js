@@ -271,9 +271,9 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="lg:grid grid-col-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
+                        <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
-                            <div className="flex flex-col gap-16">
+                            <div className="flex flex-col gap-16 py-16 lg:py-0">
                                 <div className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
@@ -297,7 +297,7 @@ export default function Home() {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col gap-16">
+                            <div className="flex flex-col gap-16 py-16 lg:py-0">
                                 <div className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
