@@ -8,6 +8,7 @@ import token_2 from '../assets/token_2.png';
 import token_3 from '../assets/token_3.png';
 import team from '../assets/team.png';
 import nft from '../assets/nft.png';
+import roadmap from '../assets/roadmap.png';
 import Footer from './Footer';
 
 
@@ -30,16 +31,15 @@ export default function Home() {
 
                     <div className="lg:w-1/3 w-full">
                         <h1 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                            Stand Out
-                            from The Crowd.
+                        What's pug?
                         </h1>
 
-                        <p className='py-8 leading-loose font-montserat text-gray-100'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                        <p className='py-8 leading-loose font-montserat text-gray-100'>A Pug Inu is a hybrid breed of dog created by crossing a Pug and an Akita Inu. They are known for being small yet strong, loyal, and loving. They are often called "designer breeds" because they are a relatively new type of dog. The Pug Inu has a very unique look and personality, and is a great companion for anyone who is looking for a loyal and loving pet.</p>
 
                         <div className="button font-montserat">
                             <a href="/">
                                 <button className="bg-purple-100 hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
-                                    Get PUG
+                                    Buy PUG
                                 </button>
                             </a>
                         </div>
@@ -355,8 +355,8 @@ export default function Home() {
             {/* roadmap */}
 
             <div className=" bg-blue-100">
-                <div className="font-montserat bg-dog">
-                    <div className=" py-20 lg:px-20 px-5 container mx-auto block lg:flex justify-between items-center">
+                <div className="font-montserat bg-dog lg:px-20 px-5 py-20">
+                    <div className=" container mx-auto block lg:flex justify-between items-center">
 
                         <div className='lg:w-1/2 w-full'>
 
@@ -374,6 +374,8 @@ export default function Home() {
                             <img src={dog} alt="" className='lg:w-8/12 w-full lg:float-right' />
                         </div>
                     </div>
+
+                    <img src={roadmap} alt="" className='flex mx-auto' />
                 </div>
             </div>
 
