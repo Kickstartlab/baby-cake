@@ -26,7 +26,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="">
+        <div className="overflow-hidden">
 
             {/* top section */}
 
@@ -101,7 +101,7 @@ export default function Home() {
                             </button>
                         </div>
 
-                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
+                        <div data-aos="zoom-out" className="lg:w-1/2 w-full">
                             <img src={dog} alt="" className='lg:w-10/12 w-full lg:float-right' />
                         </div>
                     </div>
@@ -381,7 +381,7 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos="fade-left" className="lg:w-1/2 w-full">
+                        <div data-aos="zoom-out" className="lg:w-1/2 w-full">
                             <img src={dog} alt="" className='lg:w-8/12 w-full lg:float-right' />
                         </div>
                     </div>
