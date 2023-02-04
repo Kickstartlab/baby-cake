@@ -33,7 +33,7 @@ function ProgressBar() {
 
     return (
         <div>
-            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "space-between", columnGap: "50px", rowGap: "30px", flexWrap: "wrap" }}>
+            <div style={{ color: "#fff", textAlign: "center", display: "flex", alignItems: "baseline", justifyContent: "space-between", columnGap: "20px", rowGap: "30px", flexWrap: "wrap" }}>
                 <div style={{ width: 150, display: "flex", flexDirection: "column", alignItems: "center", rowGap: "25px", }}>
                     <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
                         textColor: '#232340',

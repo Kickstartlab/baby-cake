@@ -132,7 +132,7 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos="fade-up" className="bg-yellow-200 p-8 rounded-3xl shadow-2xl mt-3">
+                        <div data-aos="fade-up" className="bg-yellow-200 lg:p-8 p-3 rounded-3xl shadow-2xl mt-3">
 
                             <ProgressBar />
 
