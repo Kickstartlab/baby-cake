@@ -25,7 +25,7 @@ export default function Menu() {
         </nav>
       </div>
 
-      <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
+      <div className="lg:hidden flex items-center justify-between py-5 font-nutino-sans">
         <a href="/" className="logo w-1/2">
           <h2 className='md:text-4xl text-3xl font-montserat font-bold'>
             Baby Cake
