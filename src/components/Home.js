@@ -390,7 +390,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="zoom-out" className="lg:w-1/2 w-full">
-                            <img src={dog} alt="" className='lg:float-right -mt-12' />
+                            <img src={dog} alt="" className='lg:float-right -mt-12 lg:block hidden' />
                         </div>
                     </div>
 
