@@ -19,8 +19,8 @@ export default function Menu() {
           <ul className="text-md flex justify-center gap-12 items-center">
             <li><a href="#about" className="hover:text-seagreen-100 cursor-pointer">About</a></li>
             <li><a href="#tokenomics" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
-            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">Chart</a></li>
-            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">Telegram</a></li>
+            <li><a href="/" className="hover:text-seagreen-100 cursor-pointer">Chart</a></li>
+            <li><a href="/" className="hover:text-seagreen-100 cursor-pointer">Telegram</a></li>
           </ul>
         </nav>
       </div>
@@ -56,7 +56,7 @@ export default function Menu() {
           <a href="#tokenomics" className="text-lg ml-4 text-white-100 font-semibold">Tokenomics</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="#nft" className="text-lg ml-4 text-white-100 font-semibold">Chart</a>
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Chart</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
           <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Telegram</a>
