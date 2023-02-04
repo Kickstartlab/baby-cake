@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
 }
 
+.bg-top {
+  background-image: url(../src/assets/bg-top.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .bg-path_1 {
   background-image: url(../src/assets/line.png);
   background-position: center;
@@ -20,6 +27,12 @@
 
 .bg-dog {
   background-image: url(../src/assets/bg_dog.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.bg-dog-2 {
+  background-image: url(../src/assets/bg_dog_1.png);
   background-position: top right;
   background-repeat: no-repeat;
 }

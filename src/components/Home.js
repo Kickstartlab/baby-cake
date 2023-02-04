@@ -1,12 +1,14 @@
 import React from 'react'
 import Menu from './Menu'
 import dog_2 from '../assets/dog_2.png';
-import video from '../assets/video.mp4';
+import logo_1 from '../assets/logo_1.png';
 import dog from '../assets/dog.png';
+import dog_1 from '../assets/dog_1.png';
 import token_1 from '../assets/token_1.png';
 import token_2 from '../assets/token_2.png';
 import token_3 from '../assets/token_3.png';
 import team from '../assets/team.png';
+import bg_top from '../assets/bg-top.png';
 import nft from '../assets/nft.png';
 import roadmap from '../assets/roadmap.png';
 import Footer from './Footer';
@@ -19,8 +21,9 @@ export default function Home() {
 
     useEffect(() => {
         Aos.init({
-            duration: 2500,
-            once: true
+            duration: 3500,
+            once: true,
+            delay: 50
         });
         Aos.refresh();
     }, [])
@@ -30,27 +33,32 @@ export default function Home() {
 
             {/* top section */}
 
-            <div className="lg:px-20 px-5 container mx-auto relative z-20">
+            <div className="lg:px-20 px-5 container mx-auto">
                 <Menu />
 
-                <video width="1297" height="654" controls className='rounded-4xl my-8' data-aos="zoom-out">
-                    <source src={video} type="video/mp4" />
-                    Error Message
-                </video>
+                <div className="bg-top py-12 flex flex-col items-center justify-center gap-y-8">
+                    <img src={logo_1} alt="" className='' />
+
+                    <h1 className='md:text-7xl text-3xl font-montserat font-bold text-white-100'>
+                        Baby Cake 2.0
+                    </h1>
+
+                </div>
 
                 <div className="lg:flex block justify-between items-center py-12 my-12 bg-path">
 
                     <div data-aos="fade-right" className="lg:w-1/2 w-full">
-                        <h1 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                            What's pug?
-                        </h1>
+                        <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
+                            Stand Out
+                            from The Crowd.
+                        </h2>
 
-                        <p className='py-8 leading-loose font-montserat text-gray-100'>A Pug Inu is a hybrid breed of dog created by crossing a Pug and an Akita Inu. They are known for being small yet strong, loyal, and loving. They are often called "designer breeds" because they are a relatively new type of dog. The Pug Inu has a very unique look and personality, and is a great companion for anyone who is looking for a loyal and loving pet.</p>
+                        <p className='py-8 leading-loose font-montserat text-gray-100'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
 
                         <div className="button font-montserat">
                             <a href="/">
                                 <button className="bg-purple-100 hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
-                                    Buy PUG
+                                    Get Pancake
                                 </button>
                             </a>
                         </div>
@@ -68,8 +76,8 @@ export default function Home() {
 
             {/* who we are */}
 
-            <div className="">
-                <div className="bg-dog font-montserat bg-blue-100">
+            <div id='about' className="">
+                <div className="bg-dog-2 font-montserat bg-brown-100">
                     <div className=" py-20 lg:px-20 px-5 container mx-auto block lg:flex justify-between items-center">
 
                         <div data-aos="fade-right" className='lg:w-1/2 w-full'>
@@ -102,7 +110,7 @@ export default function Home() {
                         </div>
 
                         <div data-aos="zoom-out" className="lg:w-1/2 w-full">
-                            <img src={dog} alt="" className='lg:w-10/12 w-full lg:float-right' />
+                            <img src={dog_1} alt="" className='lg:w-10/12' />
                         </div>
                     </div>
                 </div>
@@ -110,7 +118,7 @@ export default function Home() {
 
             {/* tokenomics*/}
 
-            <div className="bg-white-50 font-montserat">
+            <div id='tokenomics' className="bg-yellow-50 font-montserat">
                 <div className=" py-20 lg:px-20 px-5 container mx-auto">
 
                     <div>
@@ -126,7 +134,7 @@ export default function Home() {
                             </h2>
 
                             <h2 className='text-3xl font-montserat font-bold text-blue-100'>
-                                TAX: 50%
+                                Negative Tax: 5%
                             </h2>
 
                             <h2 className='text-3xl font-montserat font-bold text-blue-100'>
@@ -135,7 +143,7 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-white-100 py-8 rounded-3xl">
+                        <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-yellow-200 py-8 rounded-3xl shadow-2xl mt-3">
 
                             <div className='text-center'>
                                 <img src={token_1} alt="" className='w-10/12' />
@@ -146,13 +154,13 @@ export default function Home() {
                             <div className='text-center'>
                                 <img src={token_2} alt="" className='w-10/12' />
                                 <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
-                                    Presale
+                                    Liquidity
                                 </h2>
                             </div>
                             <div className='text-center'>
                                 <img src={token_3} alt="" className='w-10/12' />
                                 <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
-                                    Presale
+                                    Burn
                                 </h2>
                             </div>
 
@@ -240,7 +248,7 @@ export default function Home() {
                         <div className="lg:flex justify-between">
 
                             <h2 data-aos="fade-down" className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                                How to get your own pug
+                                How to get your own Pancake
                             </h2>
 
                             <button data-aos="zoom-out" className="bg-purple-100 hover:bg-white-50 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
@@ -254,7 +262,7 @@ export default function Home() {
                         </p>
 
                         <h2 data-aos="fade-right" className='md:text-4xl text-3xl font-montserat font-bold mt-5'>
-                            Getting your Pug is as easy as it gets
+                            Getting your Pancake is as easy as it gets
                         </h2>
 
                         <p data-aos="fade-left" className='py-8 leading-loose font-montserat'>
@@ -274,7 +282,7 @@ export default function Home() {
                         <div className="">
 
                             <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                                How to get your own pug
+                                Pancake ecosystem
                             </h2>
 
                             <p className="leading-loose py-8">
@@ -285,7 +293,7 @@ export default function Home() {
                         <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
                             <div className="flex flex-col gap-16 py-16 lg:py-0">
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center shadow-2xl bg-yellow-100">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center shadow-2xl bg-purple-50">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -296,7 +304,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-purple-50 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -309,7 +317,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-16 py-16 lg:py-0">
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-purple-50 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -320,7 +328,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-purple-50 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -333,7 +341,7 @@ export default function Home() {
                             </div>
 
                             <div className="flex flex-col gap-16">
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100 shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-purple-50 shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -344,7 +352,7 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-yellow-100  shadow-2xl">
+                                <div data-aos="zoom-out" className="rounded-3xl p-8 text-center bg-purple-50  shadow-2xl">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
                                             ABCD
@@ -365,7 +373,7 @@ export default function Home() {
 
             {/* roadmap */}
 
-            <div className=" bg-blue-100">
+            <div id='roadmap' className=" bg-brown-100">
                 <div className="font-montserat bg-dog lg:px-20 px-5 py-20">
                     <div className=" container mx-auto block lg:flex justify-between items-center">
 
@@ -382,17 +390,17 @@ export default function Home() {
                         </div>
 
                         <div data-aos="zoom-out" className="lg:w-1/2 w-full">
-                            <img src={dog} alt="" className='lg:w-8/12 w-full lg:float-right' />
+                            <img src={dog} alt="" className='lg:float-right -mt-12' />
                         </div>
                     </div>
 
-                    <img data-aos="zoom-in" src={roadmap} alt="" className='flex mx-auto' />
+                    <img data-aos="zoom-in" src={roadmap} alt="" className='flex mx-auto lg:pt-8' />
                 </div>
             </div>
 
             {/* pug nft */}
 
-            <div className="bg-white-100 font-montserat">
+            <div id='nft' className="bg-white-100 font-montserat">
                 <div className=" py-20 container mx-auto">
 
                     <div className='lg:px-20 px-5 '>
@@ -412,7 +420,7 @@ export default function Home() {
 
                     <div className="lg:px-20 px-5">
 
-                        <div className="py-12 rounded-2xl bg-path_1 bg-purple-100">
+                        <div className="py-12 rounded-2xl bg-brown-200">
 
                             <h4 className="text-3xl py-8 font-bold text-center text-white-100 p-3">
                                 A dream team building a curated<br></br> marketplace for you.

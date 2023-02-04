@@ -538,6 +538,9 @@ video {
 .gap-16{
   gap: 4rem;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 .overflow-y-auto{
   overflow-y: auto;
 }
