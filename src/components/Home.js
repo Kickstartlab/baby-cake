@@ -292,7 +292,7 @@ export default function Home() {
 
                         <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
-                            <div className="flex flex-col gap-16 py-16 lg:py-0">
+                            <div className="flex flex-col gap-16 lg:py-16 py-0">
                                 <div data-aos="zoom-out" className="rounded-3xl p-8 text-center shadow-2xl bg-purple-50">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
