@@ -23,9 +23,8 @@ export default function Footer() {
           <ul className="text-md lg:flex justify-center gap-12 items-center py-5">
             <li><a href="#about" className="italic">About</a></li>
             <li><a href="#tokenomics" className="italic">Tokenomics</a></li>
-            <li><a href="#nft" className="italic">Nft's</a></li>
+            <li><a href="#nft" className="italic">Chart</a></li>
             <li><a href="#roadmap" className="italic">Rodmap</a></li>
-            <li><a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="cursor-pointer">Whitepaper</a></li>
           </ul>
         </nav>
       </div>
