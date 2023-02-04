@@ -4,26 +4,23 @@ import dog_2 from '../assets/dog_2.png';
 import logo_1 from '../assets/logo_1.png';
 import dog from '../assets/dog.png';
 import dog_1 from '../assets/dog_1.png';
-import token_1 from '../assets/token_1.png';
-import token_2 from '../assets/token_2.png';
-import token_3 from '../assets/token_3.png';
-import team from '../assets/team.png';
-import bg_top from '../assets/bg-top.png';
+import team_1 from '../assets/team_1.jpg';
+import team_2 from '../assets/team_2.jpg';
+import team_3 from '../assets/team_3.jpg';
 import nft from '../assets/nft.png';
-import roadmap from '../assets/roadmap.png';
 import Footer from './Footer';
 import { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
+import ProgressBar from './ProgressBar';
 
 
 export default function Home() {
 
     useEffect(() => {
         Aos.init({
-            duration: 3500,
+            duration: 2500,
             once: true,
-            delay: 50
         });
         Aos.refresh();
     }, [])
@@ -49,11 +46,12 @@ export default function Home() {
 
                     <div data-aos="fade-right" className="lg:w-1/2 w-full">
                         <h2 className='md:text-6xl text-3xl font-montserat font-bold text-blue-100'>
-                            Stand Out
-                            from The Crowd.
+                            Do you love to stack up $CAKE?
                         </h2>
 
-                        <p className='py-8 leading-loose font-montserat text-gray-100'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+                        <p className='py-8 leading-loose font-montserat text-gray-100'>
+                            Baby Cake 2.0 offers you massive cake rewards just by holding. Be a part of this amazing journey with us
+                        </p>
 
                         <div className="button font-montserat">
                             <a href="/">
@@ -83,25 +81,16 @@ export default function Home() {
                         <div data-aos="fade-right" className='lg:w-1/2 w-full'>
 
                             <h2 className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
-                                We Welcome you
-                                on this adventure!
+                                About Baby Cake 2.0
                             </h2>
 
                             <p className='py-8 leading-loose font-montserat text-white-100'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
+                                Baby Cake 2.0 is a meme utility project which is a prototype of the BabyCake token which did about a 100 million mcap a while ago.
+                                Baby cake 2.0 aims to give those who missed baby cake token the opportunity to make such gains again. The dev of BabyCake 2.0 is Hitman supported by a team of chads who are safe and well known in the defi space.
                             </p>
 
                             <p className='leading-loose font-montserat text-white-100'>
-
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
-                            </p>
-
-                            <h2 className='pt-8 text-3xl font-montserat font-bold text-white-100'>
-                                Story time
-                            </h2>
-
-                            <p className='py-8 leading-loose font-montserat text-white-100'>
-                                Once upon a time, there lived a pug. He was a curious little pup who loved to explore the world around him. One day, pug was taking a stroll through the park when he spotted a tall man with a big smile. It was Elon Musk, the famous inventor and entrepreneur. Pug was so excited that he could hardly contain himself. Elon noticed Pug and his enthusiasm and immediately knelt down to pet him. The two shared an instant connection, and Elon asked Pug if he wanted to join him on his next adventure. Elon took Pug with him all over the world, from the heights of the Rocky Mountains to the Pug of the Amazon rainforest. Pug got to experience all kinds of exciting places and meet some incredible people. By the end of their trip, PUG and Elon had become great friends. Whenever Elon had a new invention or idea, he would always turn to PUG for advice.
+                                BabyCake 2.0 has its own Dex swap and much more utility coming including Nfts and others. Babycake 2.0 is a token that gives out huge Cake rewards to holders based on Volume.
                             </p>
 
                             <button className="bg-purple-100 hover:bg-blue-100 border-2 border-purple-100 hover:text-purple-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
@@ -127,42 +116,26 @@ export default function Home() {
                             Tokenomics
                         </h2>
 
-                        <div className='hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6 place-items-center pt-12 pb-3'>
+                        <div className='hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-6 place-items-baseline text-center pt-12 pb-3'>
 
-                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
-                                TAX: 50%
+                            <h2 className='text-2xl font-montserat font-bold text-blue-100'>
+                                Total supply: 1.000.000 BCAKE
                             </h2>
 
-                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
-                                Negative Tax: 5%
+                            <h2 className='text-2xl font-montserat font-bold text-blue-100'>
+                                Max wallet: 2% (20.000 BCAKE)
                             </h2>
 
-                            <h2 className='text-3xl font-montserat font-bold text-blue-100'>
-                                TAX: 50%
+                            <h2 className='text-2xl font-montserat font-bold text-blue-100'>
+                                Max transaction: 2% (20.000 BCAKE)
                             </h2>
 
                         </div>
 
-                        <div data-aos="fade-up" className="grid grid-cols-1 lg:grid-cols-3 place-items-center bg-yellow-200 py-8 rounded-3xl shadow-2xl mt-3">
+                        <div data-aos="fade-up" className="bg-yellow-200 p-8 rounded-3xl shadow-2xl mt-3">
 
-                            <div className='text-center'>
-                                <img src={token_1} alt="" className='w-10/12' />
-                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
-                                    Presale
-                                </h2>
-                            </div>
-                            <div className='text-center'>
-                                <img src={token_2} alt="" className='w-10/12' />
-                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
-                                    Liquidity
-                                </h2>
-                            </div>
-                            <div className='text-center'>
-                                <img src={token_3} alt="" className='w-10/12' />
-                                <h2 className='text-xl font-montserat font-semibold pt-8 text-blue-100 italic'>
-                                    Burn
-                                </h2>
-                            </div>
+                            <ProgressBar />
+
 
                         </div>
 
@@ -292,7 +265,7 @@ export default function Home() {
 
                         <div className="lg:grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-24 mt-12">
 
-                            <div className="flex flex-col gap-16 lg:py-16 py-0">
+                            <div className="flex flex-col gap-16">
                                 <div data-aos="zoom-out" className="rounded-3xl p-8 text-center shadow-2xl bg-purple-50">
                                     <div className="p-5">
                                         <h4 className="text-2xl font-bold">
@@ -380,12 +353,8 @@ export default function Home() {
                         <div className='lg:w-1/2 w-full'>
 
                             <h2 data-aos="fade-right" className='md:text-6xl text-3xl font-montserat font-bold text-white-100'>
-                                Pug Roadmap
+                                Baby Cake Roadmap
                             </h2>
-
-                            <p className='py-8 leading-loose font-montserat text-white-100'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
 
                         </div>
 
@@ -394,7 +363,136 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <img data-aos="zoom-in" src={roadmap} alt="" className='flex mx-auto lg:pt-8' />
+                    <div className="relative text-white-100 font-montserat text-sm font-semibold pt-6">
+
+                        <div className="hidden lg:block w-1 ml-2 bg-seagreen-200 absolute h-full left-1/2 transform -translate-x-1/2 line"></div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
+                                    <div className="w-full sm:w-80 sm:mr-8 p-5 border rounded-2xl shadow space-y-5">
+
+                                        <h4 className="text-2xl font-semibold">
+                                            Phase 1
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg font-medium">
+                                            <li>Stealth Launch</li>
+                                            <li>
+                                                Community Building
+                                            </li>
+                                            <li>
+                                                Website Creation
+                                            </li>
+                                            <li>
+                                                Social Media launch
+                                            </li>
+                                            <li>
+                                                100 holders
+                                            </li>
+                                            <li>
+                                                Coin listings
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute border-b-2 border-seagreen-200 right-1/2 mr-4 px-3 w-8">
+
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 -ml-1">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#15BFFD" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-left" className="flex justify-end w-full mx-auto items-center lg:mr-36">
+                                    <div className="w-full sm:w-80 sm:mr-8 p-5 border rounded-2xl shadow space-y-5">
+
+                                        <h4 className="text-2xl font-semibold">
+                                            Phase 2
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg font-medium">
+                                            <li>Whitepaper release</li>
+                                            <li>
+                                                Trending everywhere
+                                            </li>
+                                            <li>
+                                                Giveaways
+                                            </li>
+                                            <li>
+                                                Listing on CoinGecko and CoinMarketCap
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute border-b-2 border-seagreen-200 left-1/2 ml-12 px-3 w-8">
+
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 -ml-1">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#15BFFD" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
+                                    <div className="w-full sm:w-80 sm:mr-8 p-5 border rounded-2xl shadow space-y-5">
+
+                                        <h4 className="text-2xl font-semibold">
+                                            Phase 3
+                                        </h4>
+                                        <ul className="list-disc ml-5 text-lg font-medium">
+                                            <li>
+                                                Big Partnerships
+                                            </li>
+                                            <li>
+                                                Listing on Major Exchanges
+                                            </li>
+                                            <li>
+                                                Influencer Marketing Push
+                                            </li>
+                                            <li>
+                                                Further Partnerships
+                                            </li>
+                                            <li>
+                                                NFT and Games
+                                            </li>
+                                            <li>
+                                                Further Ecosystem Development
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute border-b-2 border-seagreen-200 right-1/2 mr-4 px-3 w-8">
+
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 -ml-1">
+
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="12" fill="#15BFFD" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
@@ -429,16 +527,25 @@ export default function Home() {
 
                             <div className="grid grid-cols-1 lg:grid-cols-3 place-items-center gap-12 px-8 ">
 
-                                <div data-aos="zoom-in" className='text-center'>
-                                    <img src={team} alt="" className='' />
+                                <div data-aos="zoom-in" className='text-center bg-white-100 p-3 rounded-2xl'>
+                                    <img src={team_1} alt="" className='rounded-md' />
+                                    <p className="text-blue-100 font-xl font-semibold pt-3">
+                                        Hecker ( Marketing Manager )
+                                    </p>
                                 </div>
 
-                                <div data-aos="zoom-in" className='text-center'>
-                                    <img src={team} alt="" className='' />
+                                <div data-aos="zoom-in" className='text-center bg-white-100 p-3 rounded-2xl'>
+                                    <img src={team_2} alt="" className='rounded-md' />
+                                    <p className="text-blue-100 font-xl font-semibold pt-3">
+                                        Graphic Designer ( Busded )
+                                    </p>
                                 </div>
 
-                                <div data-aos="zoom-in" className='text-center'>
-                                    <img src={team} alt="" className='' />
+                                <div data-aos="zoom-in" className='text-center bg-white-100 p-3 rounded-2xl'>
+                                    <img src={team_3} alt="" className='rounded-md' />
+                                    <p className="text-blue-100 font-xl font-semibold pt-3">
+                                        Hitman ( Owner / DEV)
+                                    </p>
                                 </div>
 
                             </div>

@@ -19,18 +19,10 @@ export default function Menu() {
           <ul className="text-md flex justify-center gap-12 items-center">
             <li><a href="#about" className="hover:text-seagreen-100 cursor-pointer">About</a></li>
             <li><a href="#tokenomics" className="hover:text-seagreen-100 cursor-pointer">Tokenomics</a></li>
-            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">Nft's</a></li>
-            <li><a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="hover:text-seagreen-100 cursor-pointer">Whitepaper</a></li>
+            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">Chart</a></li>
+            <li><a href="#nft" className="hover:text-seagreen-100 cursor-pointer">Telegram</a></li>
           </ul>
         </nav>
-
-        <div className="">
-          <a href="/">
-            <button className="bg-blue-100 hover:bg-white-100 border-2 border-blue-100 hover:text-blue-100 cursor-pointer text-white-100 py-3 px-8 rounded-md font-semibold">
-              Buy Now
-            </button>
-          </a>
-        </div>
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
@@ -64,14 +56,11 @@ export default function Menu() {
           <a href="#tokenomics" className="text-lg ml-4 text-white-100 font-semibold">Tokenomics</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="#nft" className="text-lg ml-4 text-white-100 font-semibold">NFT's</a>
+          <a href="#nft" className="text-lg ml-4 text-white-100 font-semibold">Chart</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Buy Now</a>
+          <a href="/" className="text-lg ml-4 text-white-100 font-semibold">Telegram</a>
         </button>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-white-100 font-semibold">Whitepaper</a>
-        </div>
       </div> : null
       }
 
