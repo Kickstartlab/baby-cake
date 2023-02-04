@@ -8,16 +8,10 @@ import twitter from '../assets/twitter.png';
 
 export default function Footer() {
   return (
-    <footer className='container font-montserat mx-auto lg:px-20 px-5 pt-6 text-gray-100 bg-footer'>
+    <footer className='container font-montserat mx-auto lg:px-20 px-5 text-gray-100 bg-footer'>
 
       <div className="text-center">
         <img data-aos="zoom-out" src={logo} alt="pug Inu" className='flex mx-auto'/>
-
-        <div className="pb-8 pt-3">
-          <div className="text-gray-100">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunca <br></br> vulputate libero et velit interdum, ac aliquet odio mattis.
-          </div>
-        </div>
 
         <nav>
           <ul className="text-md lg:flex justify-center gap-12 items-center py-5">
