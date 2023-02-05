@@ -340,7 +340,7 @@ export default function Home() {
                                 <div className="pt-6 px-5 lg:flex justify-between items-center">
                                     <h3 className="text-white font-bold md:text-5xl text-2xl">
                                         Get your<br></br>
-                                        pub today!
+                                        cake today!
                                     </h3>
 
                                     <h3 className="text-white font-bold md:text-3xl text-2xl">
